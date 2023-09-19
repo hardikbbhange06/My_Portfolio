@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './components/Header';
-import Introduction from './components/Introduction';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -10,11 +8,22 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Testimonials from './components/Testimonials';
 import './App.css';
+import Header from './components/Header/Header';
+import Introduction from './components/Introduction/Introduction';
+import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
+// import GitHubContributions from './components/GithubContributions';
 
 const App = () => {
   return (
     <>
-      <Header />
+    {/* <Router>
+    <Routes>
+      <Route path="/" element={<Header />} />
+      
+    </Routes>
+
+    </Router> */}
+    <Header />
       <main>
         <Introduction />
         <AboutMe />
@@ -25,6 +34,7 @@ const App = () => {
         <Contact />
         <Resume />
         <Testimonials />
+       {/* <GitHubContributions/> */}
       </main>
       <footer>
         {/* Add footer content here */}

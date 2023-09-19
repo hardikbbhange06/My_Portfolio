@@ -14,7 +14,10 @@ const WorkExperience = () => {
 
   return (
     <section id="work-experience" className="section">
-      <h2>Work Experience</h2>
+    <div className="animate-charcter1" >
+    <h2>Work Experience</h2>
+    </div>
+     
       {workExperienceData.map((experience, index) => (
         <div key={index} className="work-experience-card">
           <h3>{experience.company}</h3>

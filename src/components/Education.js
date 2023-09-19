@@ -13,7 +13,10 @@ const Education = () => {
 
   return (
     <section id="education" className="section">
-      <h2>Education</h2>
+    <div className="animate-charcter1">
+    <h2>Education</h2>
+    </div>
+    
       {educationData.map((education, index) => (
         <div key={index} className="education-card">
           <h3>{education.degree}</h3>

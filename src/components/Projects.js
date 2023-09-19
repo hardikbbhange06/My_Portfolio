@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Portfolio.css"
 
 const Projects = () => {
   // Replace this with your project data
@@ -17,7 +18,10 @@ const Projects = () => {
 
   return (
     <section id="projects" className="section">
-      <h2>Projects</h2>
+    <div className="animate-charcter1">
+    <h2>Projects</h2>
+    </div>
+      
       {projectsData.map((project, index) => (
         <div key={index} className="project-card">
           <h3>{project.name}</h3>

@@ -1,17 +1,15 @@
 import React from "react";
 import { AppBar, Toolbar, Typography } from "@mui/material";
-import "./Portfolio.css";
-
+import "./Header.css"
 const Header = () => {
   return (
     <AppBar position="static">
-      <Toolbar>
+      <Toolbar style={{backgroundColor:"#00C9F3" }}>
         <Typography variant="h6" component="div">
           <div className="waviy">
             <span style={{ "--i": 1 }}>M</span>
             <span style={{ "--i": 2 }}>Y</span>
             <br />
-
             <span style={{ "--i": 3 }}>P</span>
             <span style={{ "--i": 4 }}>O</span>
             <span style={{ "--i": 5 }}>R</span>

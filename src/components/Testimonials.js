@@ -12,7 +12,10 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className="section">
-      <h2>Testimonials/Recommendations</h2>
+    <div  className="animate-charcter1">
+    <h2>Testimonials/Recommendations</h2>
+    </div>
+      
       {testimonialsData.map((testimonial, index) => (
         <div key={index} className="testimonial-card">
           <h3>{testimonial.name}</h3>
