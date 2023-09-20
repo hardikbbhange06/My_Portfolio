@@ -1,6 +1,4 @@
 import React from 'react';
-import AboutMe from './components/AboutMe';
-import Skills from './components/Skills';
 import Projects from './components/Projects';
 import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
@@ -11,6 +9,8 @@ import './App.css';
 import Header from './components/Header/Header';
 import Introduction from './components/Introduction/Introduction';
 import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
+import AboutMe from './components/AboutMe/AboutMe';
+import Skills from './components/Skills/Skills';
 // import GitHubContributions from './components/GithubContributions';
 
 const App = () => {
