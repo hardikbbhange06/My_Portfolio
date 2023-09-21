@@ -1,5 +1,6 @@
 import React from 'react';
-import "./Portfolio.css"
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Projects = () => {
   // Replace this with your project data

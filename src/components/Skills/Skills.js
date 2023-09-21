@@ -187,16 +187,20 @@ const items = itemData.map((item) => (
 
 
 const styles = `
-  .carousel-item img {
+  .my-carousel .carousel-item img {
     max-width: 90%;
     height: 200px;
     display: block;
     margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: 50px;
-
+    transition: transform 0.3s, opacity 0.3s;
   }
-  .carousel-item h2 {
+  .my-carousel .carousel-item:hover img {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+  }
+  .my-carousel .carousel-item h2 {
     font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
@@ -204,6 +208,7 @@ const styles = `
     text-align: center;
   }
 `;
+
 
 
 const Skills = (count) => {
@@ -216,7 +221,7 @@ const Skills = (count) => {
       </div>
 
       <div>
-      <Container>
+      <Container className="my-carousel">
         <AliceCarousel
           mouseTracking
           items={items}
