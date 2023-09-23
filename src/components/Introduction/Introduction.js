@@ -49,6 +49,7 @@ const Introduction = () => {
 
   return (
     <section id="introduction">
+    <>
       <Box
         sx={{
           display: "flex",
@@ -64,7 +65,7 @@ const Introduction = () => {
         }}
       >
         {/* <Paper elevation={0} /> */}
-        <Paper>
+        <Paper elevation={0}>
           <div className="h-text">
             <div className="h-animate">
               <span className="text first-text">
@@ -77,7 +78,7 @@ const Introduction = () => {
           </div>
         </Paper>
 
-        <Paper>
+        <Paper elevation={0}>
           <div>
             <div class="container">
               <div class="box">
@@ -99,6 +100,7 @@ const Introduction = () => {
           </div>
         </Paper>
       </Box>
+      <Container>
       <Paper>
         <div className="container-p11">
           <Container>
@@ -114,6 +116,9 @@ const Introduction = () => {
           </Container>
         </div>
       </Paper>
+      </Container>
+      
+      </>
     </section>
   );
 };

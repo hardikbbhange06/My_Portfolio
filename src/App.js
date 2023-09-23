@@ -1,7 +1,5 @@
 import React from 'react';
-import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
-import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Testimonials from './components/Testimonials';
 import './App.css';
@@ -13,6 +11,9 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import Projects1 from './components/Projects/Projects1';
+import WorkExperience from './components/WorkExperience/WorkExperience';
+import Contact from './components/Contact/Contact';
+import Rikam from './components/Rikam';
 // import GitHubContributions from './components/GithubContributions';
 
 const App = () => {
@@ -28,15 +29,16 @@ const App = () => {
     <Header />
       <main>
         <Introduction />
-        <AboutMe />
+        <AboutMe   />
         <Skills />
         <Projects1/>
         <WorkExperience />
-        <Education />
+        {/* <Education /> */}
         <Contact />
-        <Resume />
-        <Testimonials />
+        {/* <Resume /> */}
+        {/* <Testimonials /> */}
        {/* <GitHubContributions/> */}
+       <Rikam/>
       </main>
       <footer>
         {/* Add footer content here */}

@@ -2,11 +2,13 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import MyImage from "../IMG/boy-2.jpg";
 import Resume from "../IMG/HBhangeSDqspRE0600_page-1.jpg";
+import { CardMedia } from '@mui/material';
+// import { styled } from '@mui/material/styles';
 import {
   Box,
   Card,
   CardContent,
-  CardMedia,
+  // CardMedia,
   Paper,
   Typography,
 } from "@mui/material";
@@ -39,6 +41,17 @@ const AnimatedGradientText = styled.h1`
 
 // ------------------------------------------
 
+const StyledCardMedia = styled(CardMedia)`
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
 const AboutMe = () => {
   return (
     <section id="about-me">
@@ -53,6 +66,7 @@ const AboutMe = () => {
       <div className="yourself">
         <>
           <Card
+            elevation={0}
             sx={{
               display: "flex",
               flexWrap: "wrap",
@@ -60,12 +74,13 @@ const AboutMe = () => {
               alignItems: "center",
             }}
           >
-            <CardMedia
-              component="img"
-              sx={{ width: "100%", maxWidth: "300px", height: "auto" }}
-              image={MyImage}
-              alt="Live from space album cover"
-            />
+             <div>
+      <StyledCardMedia
+        component="img"
+        image={MyImage}
+        alt="Live from space album cover"
+      />
+    </div>
             {/* <div >
               <img src={MyImage} alt="" />
             </div> */}
@@ -99,7 +114,11 @@ const AboutMe = () => {
                     innovate in the field of web development.
                   </p>
                 </Typography>
-                <div>
+                <div
+                  style={{
+                    marginTop: "20px",
+                  }}
+                >
                   <>
                     <a
                       href={Resume}

@@ -99,13 +99,18 @@ const Projects1 = () => {
         </div>
         <>
           <Container>
-            <div className="card">
+            <div className="card"
+            style={{
+              // height:"100%",
+            }}>
               <Box
                 className="bg"
                 sx={{
                   flexGrow: 1,
                   // border: "2px solid red",
                   padding: "15px",
+                  // height:"100%",
+                 
                 }}
               >
                 <SwipeableViews

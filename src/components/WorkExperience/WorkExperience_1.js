@@ -1,4 +1,5 @@
 import React from 'react';
+import "./WorkExperience.css"
 
 const WorkExperience = () => {
   // Replace this with your work experience data
